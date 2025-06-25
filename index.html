@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +7,6 @@
       text-align: center;
       font-family: sans-serif;
     }
-    #secret {
-      display: none;
-      margin-top: 20px;
-      font-style: italic;
-      color: darkblue;
-    }
     button {
       padding: 10px 20px;
       font-size: 1em;
@@ -22,6 +15,7 @@
       background-color: royalblue;
       color: white;
       cursor: pointer;
+      margin: 10px;
     }
     button:hover {
       background-color: navy;
@@ -29,13 +23,17 @@
   </style>
 </head>
 <body>
+<div>
   <h1>Welcome to COPE One</h1>
   <p>A mythic place where fiction and blueprint meet.</p>
-  
-  <button onclick="document.getElementById('secret').style.display='block'">
-    Load Code One
-  </button>
-  
-  <p id="secret">Ah-ha! The first fold has opened. The story deepens...</p>
+
+  <a href="read-one.html">
+    <button>Read One</button>
+  </a>
+
+  <a href="Verse-one.html">
+    <button>Verse One</button>
+  </a>
+</div>
 </body>
 </html>
