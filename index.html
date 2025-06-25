@@ -2,42 +2,50 @@
 <html>
 <head>
   <title>Pinnacle Manifesto</title>
+</head>
+<body>
+  <h1>Welcome to COPE One</h1>
+  <p>A mythic place where fiction and blueprint meet.</p>
+</body>
+</html>
+0
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pinnacle Manifesto</title>
   <style>
     body {
-      font-family: sans-serif;
       text-align: center;
-      padding: 5em;
-      background-color: #f4f4f4;
+      font-family: sans-serif;
     }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
+    #secret {
+      display: none;
+      margin-top: 20px;
+      font-style: italic;
+      color: darkblue;
     }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
-    }
-
-    .enter-button {
-      background-color: #0066cc;
-      color: white;
-      border: none;
-      padding: 0.75em 1.5em;
+    button {
+      padding: 10px 20px;
       font-size: 1em;
-      border-radius: 5px;
+      border-radius: 6px;
+      border: none;
+      background-color: royalblue;
+      color: white;
       cursor: pointer;
     }
-
-    .enter-button:hover {
-      background-color: #004999;
+    button:hover {
+      background-color: navy;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to COPE One</h1>
   <p>A mythic place where fiction and blueprint meet.</p>
-  <button class="enter-button">Enter COPE One</button>
+  
+  <button onclick="document.getElementById('secret').style.display='block'">
+    Load Code One
+  </button>
+  
+  <p id="secret">Ah-ha! The first fold has opened. The story deepens...</p>
 </body>
 </html>
